@@ -1,0 +1,16 @@
+/* Projects section styles */
+section#projects {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #232323;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+}
+section#projects h2 {
+    color: #00bfae;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
