@@ -30,7 +30,7 @@
 }
 /* --- Contact Section Styles --- */
 section#contact {
-     box-sizing: border-box;
+   box-sizing: border-box;
     width: auto;
     min-width: 0;
     margin: 3rem 2rem 2rem 2rem;
@@ -61,7 +61,7 @@ section#contact {
     display: flex;
     flex-direction: row;
     gap: 3rem;
-    width: 100%;
+    width: 80%;
     justify-content: center;
 }
 .contact-left {
@@ -102,14 +102,7 @@ section#contact {
     color: #fff;
 }
 /* Contact section styles */
-section#contact {
-    max-width: 900px;
-    margin: 3rem auto;
-    padding: 2rem;
-    background: #232323;
-    border-radius: 16px;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.2);
-}
+
 section#contact h2 {
     color: #00bfae;
     margin-bottom: 1rem;

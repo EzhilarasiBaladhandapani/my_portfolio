@@ -262,7 +262,7 @@
        </section>
 	   <!-- End Skills Section -->
 
-       <section id="contact">
+       <section id="contact" class="skills-section">
            <div class="contact-header">
                <h2>Contact ME</h2>
            </div>
@@ -287,28 +287,9 @@
                        <button type="submit">Send</button>
                        <div id="contact-form-status" style="margin-top:0.7em;font-size:1em;"></div>
                    </form>
-                   <script>
-                   document.querySelector('.contact-right form').addEventListener('submit', async function(e) {
-                       e.preventDefault();
-                       const form = e.target;
-                       const statusDiv = document.getElementById('contact-form-status');
-                       statusDiv.textContent = 'Sending...';
-                       const formData = new FormData(form);
-                       try {
-                           const response = await fetch('contact-form-handler.php', {
-                               method: 'POST',
-                               body: formData
-                           });
-                           const text = await response.text();
-                           statusDiv.textContent = text;
-                           if (response.ok) {
-                               form.reset();
-                           }
-                       } catch (err) {
-                           statusDiv.textContent = 'An error occurred. Please try again later.';
-                       }
-                   });
-                   </script>
+                   <!-- EmailJS SDK -->
+                   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+                   <script src="assets/js/emailjs-contact.js"></script>
                    </form>
                </div>
            </div>
