@@ -1,3 +1,185 @@
+.stepper-step:hover, .stepper-step:focus {
+    box-shadow: 0 0 0 6px #00ffd055, 0 10px 32px 0 rgba(0,191,174,0.22), 0 1.5px 8px 0 rgba(0,0,0,0.10);
+    border-color: #00ffd0;
+    background: linear-gradient(135deg, #232f2f 70%, #00ffd0 100%);
+    border-radius: 32px;
+    transform: translateY(-8px) scale(1.045);
+    transition: box-shadow 0.22s, border-color 0.22s, background 0.22s, border-radius 0.22s, transform 0.22s;
+}
+.stepper-track-wrapper {
+    overflow-x: auto;
+    flex: 1 1 0;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 0.5rem;
+    scrollbar-width: none; /* Firefox */
+    padding-left: 18px;
+    padding-right: 18px;
+}
+.stepper-track-wrapper::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+/* How I Work Stepper Styles */
+.how-i-work-stepper {
+    width: 100%;
+    margin: 2.5rem 1.5rem 2.5rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 0.5rem;
+}
+.stepper-arrow {
+    background: #18191a;
+    border: none;
+    color: #00bfae;
+    font-size: 1.2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,191,174,0.10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    z-index: 5;
+}
+.stepper-arrow:hover {
+    background: #00bfae;
+    color: #18191a;
+    box-shadow: 0 6px 28px rgba(0,191,174,0.18);
+}
+.stepper-track-wrapper {
+}
+.stepper-track {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: max-content;
+    gap: 0;
+    position: relative;
+}
+.stepper-step {
+    background: #232b2b;
+    /* background-color: #00c6ff; */
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(0,191,174,0.10);
+    padding: 1.1rem 1.1rem 0.7rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 150px;
+    max-width: 180px;
+    height: 380px;
+
+    flex: 1 1 0;
+    position: relative;
+    z-index: 2;
+    transition: box-shadow 0.2s, transform 0.2s;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.stepper-icon {
+    font-size: 2.2rem;
+    color: #00bfae;
+    background: #18191a;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,191,174,0.10);
+    margin-bottom: 0.4rem;
+}
+.stepper-title {
+    font-size: 1.08rem;
+    font-weight: 700;
+    color: #00bfae;
+    text-align: center;
+    margin-bottom: 0.18rem;
+}
+.stepper-desc {
+    font-size: 0.97rem;
+    color: #bdbdbd;
+    text-align: center;
+    margin-bottom: 0.1rem;
+    line-height: 1.35;
+}
+.stepper-connector {
+    flex: 0 0 32px;
+    height: 3px;
+    background: linear-gradient(90deg, #00bfae 60%, #00ffd0 100%);
+    align-self: center;
+    margin-top: 1.7rem;
+    margin-bottom: 1.7rem;
+    border-radius: 2px;
+    z-index: 1;
+}
+/* Slide description style */
+.skills-slide-desc {
+    font-size: 0.97rem;
+    color: #bdbdbd;
+    text-align: center;
+    margin-top: 0.18rem;
+    margin-bottom: 0.1rem;
+    line-height: 1.35;
+}
+/* Skills Slides Section */
+.skills-slides-section {
+    width: 100%;
+    margin: 2.2rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+.skills-slides-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: center;
+    width: 100%;
+}
+.skills-slide {
+    background:grey;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    padding: 1.2rem 1.1rem 0.8rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    min-height: 280px;
+    border: 2px solid transparent;
+    transition: box-shadow 0.22s, border-color 0.22s;
+    cursor: pointer;
+}
+.skills-slide:hover {
+    box-shadow: 0 6px 28px rgba(0,191,174,0.22);
+    border-color: #00bfae;
+    background: #232b2b;
+}
+.skills-slide-icon {
+    font-size: 2.7rem;
+    color: #00bfae;
+    margin-bottom: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    width: 56px;
+}
+.skills-slide-title {
+    font-size: 1.08rem;
+    font-weight: 700;
+    color: #00bfae;
+    text-align: center;
+    margin-top: 0.2rem;
+}
+
 .skills-row:nth-child(8) .skill-bar-percent { color: #8e24aa; }
 .skills-row:nth-child(9) .skill-bar-percent { color: #ff1493; }
 /* Different background colors for each skill bar */
@@ -25,9 +207,9 @@ body {
 .skills-row {
     display: flex;
     flex-direction: row;
-    gap: 2.5rem;
+    gap: 1.5rem;
     width: 100%;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.5rem;
     background-color: transparent;
 }
 .skills-row:last-child {
@@ -37,7 +219,7 @@ body {
     display: grid;
     grid-template-columns: 44px 1fr 60px;
     align-items: center;
-    gap: 1.2rem;
+    gap: 0.5rem;
     width: 100%;
     background-color: transparent;
 
@@ -66,14 +248,7 @@ body {
     pointer-events: none;
     white-space: nowrap;
 }
-.skill-bar-percent {
-    color: #0066cc;
-    font-weight: 700;
-    font-size: 1.1rem;
-    text-align: right;
-    min-width: 48px;
-    margin-left: 0.5rem;
-}
+
 /* --- Skills Section Modern Graph Style --- */
 
 .skills-col {
@@ -96,14 +271,14 @@ body {
     margin-right: 0.5rem;
 }
 
-.skill-bar-percent {
+/* .skill-bar-percent {
     flex: 0 0 48px;
     text-align: right;
     color: #0066cc;
     font-weight: 700;
     font-size: 1.1rem;
     margin-left: 1.2rem;
-}
+} */
 /* Skills row for 2-column layout */
 .skills-row {
     display: flex;
@@ -142,7 +317,6 @@ body {
     margin: 5rem auto 2rem auto;
     border-radius: 40px;
     box-shadow: 0 2px 16px rgba(0,0,0,0.2);
-    background: #d92424;
     padding: 2.5rem 1.5rem 2.5rem 1.5rem;
     display: flex;
     flex-direction: column;
@@ -151,20 +325,18 @@ body {
 
 .skills-header {
     text-align: center;
-    margin-bottom: 2rem;
     width: 100%;
 }
 .skills-header h2 {
-    font-size: 2.2rem;
-    font-weight: 900;
+    font-size: 2.1rem;
+    font-weight: 700;
     color: #00bfae;
-    margin-bottom: 0.1rem;
     margin-top: 0;
 }
 .skills-header p {
     font-size: 1.1rem;
     color: #bdbdbd;
-    margin-top: 0.1rem;
+    margin-top: 0rem;
     margin-bottom: 0.1rem;
 }
 
@@ -172,7 +344,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    /* gap: 1.5rem; */
     margin: 1rem auto 2rem auto;
     max-width: 80%;
     padding-left: 1.5rem;
@@ -198,8 +370,7 @@ body {
 }
 .skill-bar-percent {
     flex: 0 0 48px;
-    text-align: right;
-    color: #00ffd0;
+    text-align: left;
     font-weight: 700;
     font-size: 1.1rem;
 }
@@ -221,4 +392,23 @@ section#skills h2 {
     font-size: 2rem;
     font-weight: 900;
     letter-spacing: 1px;
+}
+.skills-footer-header {         
+    text-align: center;
+    width: 100%;
+
+}
+.skills-footer-header h2 {
+    margin-bottom: 0.1rem !important;
+    margin-top: 0 !important;
+    color: #00bfae;
+}
+.skills-footer-header p {
+    font-size: 1.1rem;
+    margin-top: 0.1rem !important;
+    margin-bottom: 0.1rem !important;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }

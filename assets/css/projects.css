@@ -1,16 +1,151 @@
 /* Projects section styles */
-section#projects {
-    max-width: 900px;
-    margin: 3rem auto;
-    padding: 2rem;
-    background: #232323;
-    border-radius: 16px;
+.project-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 5rem auto 2rem auto;
+    border-radius: 40px;
     box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+    padding: 2.5rem 1.5rem 2.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2.2rem;
+    margin-top: 2.2rem;
+}
+.project-card {
+    background: #232b2b;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(0,191,174,0.08);
+    padding: 1.5rem 1.3rem 1.2rem 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    position: relative;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.project-card:hover {
+    box-shadow: 0 6px 28px rgba(0,191,174,0.18);
+    transform: translateY(-6px) scale(1.025);
+    z-index: 2;
+}
+.project-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+.project-icon {
+    font-size: 2.1rem;
+    color: #00bfae;
+    background: #18191a;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,191,174,0.10);
+}
+.project-title {
+    font-size: 1.18rem;
+    font-weight: 700;
+    color: #fff;
+}
+.project-desc {
+    color: #bdbdbd;
+    font-size: 1.01rem;
+    margin-bottom: 0.1rem;
+}
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.2rem;
+}
+.tech-badge {
+    background: #00bfae22;
+    color: #00bfae;
+    font-size: 0.97rem;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 0.18rem 0.7rem;
+    margin-bottom: 0.1rem;
+    letter-spacing: 0.01em;
+}
+.project-progress {
+    width: 100%;
+    height: 8px;
+    background: #1a2222;
+    border-radius: 6px;
+    margin: 0.2rem 0 0.7rem 0;
+    overflow: hidden;
+}
+.project-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #00bfae 60%, #00ffd0 100%);
+    border-radius: 6px;
+    transition: width 0.7s;
+}
+.project-toggle {
+    background: none;
+    border: none;
+    color: #00bfae;
+    font-size: 1.01rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-bottom: 0.1rem;
+    margin-top: 0.1rem;
+    transition: color 0.2s;
+}
+.project-toggle.open, .project-toggle:hover {
+    color: #009688;
+}
+.project-roles {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(.4,2,.3,1);
+    margin: 0;
+    padding-left: 1.2rem;
+    color: #bdbdbd;
+    font-size: 0.99rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.28rem;
+    border-left: 2px solid #00bfae22;
+}
+.project-roles.open {
+    max-height: 400px;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+.project-roles li {
+    margin-bottom: 0.1rem;
+    line-height: 1.5;
+    list-style: disc inside;
+}
+section#projects {
+    box-sizing: border-box;
+    width: auto;
+    min-width: 0;
+    margin: 1.2rem 2rem 2rem 2rem;
+    border-radius: 40px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+    border-radius: 24px;
+    padding: 0.7rem 2rem 2rem 1rem;
+    background: #232323;
 }
 section#projects h2 {
-    color: #00bfae;
-    margin-bottom: 1rem;
+     color: #00bfae;
     font-size: 2rem;
     font-weight: 900;
     letter-spacing: 1px;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
 }
