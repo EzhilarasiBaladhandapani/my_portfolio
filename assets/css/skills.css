@@ -34,8 +34,8 @@
     border: none;
     color: #00bfae;
     font-size: 1.2rem;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     box-shadow: 0 2px 8px rgba(0,191,174,0.10);
     display: flex;
@@ -69,9 +69,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 150px;
-    max-width: 180px;
-    height: 380px;
+    min-width: 10rem;
+    max-width: 12rem;
+    height: 24rem;
 
     flex: 1 1 0;
     position: relative;
@@ -86,8 +86,8 @@
     color: #00bfae;
     background: #18191a;
     border-radius: 50%;
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -151,7 +151,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 25%;
+    width: min(25%, 18rem);
     min-height: 280px;
     border: 2px solid transparent;
     transition: box-shadow 0.22s, border-color 0.22s;
@@ -169,8 +169,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 56px;
-    width: 56px;
+    height: 3.5rem;
+    width: 3.5rem;
 }
 .skills-slide-title {
     font-size: 1.08rem;
@@ -226,8 +226,8 @@ body {
 }
 
 .skill-icon img {
-    width: 44px;
-    height: 44px;
+    width: 2.75rem;
+    height: 2.75rem;
     object-fit: contain;
     border-radius: 50%;
     background: #fff;
@@ -259,8 +259,8 @@ body {
 }
 
 .skill-icon {
-    width: 44px;
-    height: 44px;
+    width: 2.75rem;
+    height: 2.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -296,8 +296,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
     margin-right: 0.7rem;
     font-size: 1.7rem;
     color: #00bfae;
@@ -313,7 +313,7 @@ body {
    
 
     width: 100%;
-    max-width: 1200px;
+    max-width: 90vw;
     margin: 5rem auto 2rem auto;
     border-radius: 40px;
     box-shadow: 0 2px 16px rgba(0,0,0,0.2);

@@ -1,3 +1,37 @@
+@media (max-width: 900px) {
+    .experience-section {
+        max-width: 98vw;
+        padding: 1rem 0.5rem 1.5rem 0.5rem;
+        border-radius: 1.2rem;
+    }
+    section#experience {
+        margin: 1rem 0.5rem 1rem 0.5rem;
+        padding: 0.5rem 0.5rem 1rem 0.5rem;
+        border-radius: 1rem;
+    }
+    .experience-card {
+        padding: 1rem 0.7rem 1rem 0.7rem;
+        border-radius: 1rem;
+        font-size: 0.97rem;
+    }
+    .exp-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .exp-icon {
+        width: 2.2rem;
+        height: 2.2rem;
+        font-size: 1.5rem;
+    }
+    .exp-company, .exp-role, .exp-dates {
+        font-size: 1rem;
+    }
+    .exp-list {
+        font-size: 0.97rem;
+        padding-left: 0.7rem;
+    }
+}
 /* Experience Cards Layout */
 .experience-cards {
     display: flex;
