@@ -1,3 +1,45 @@
+@media (max-width: 600px) {
+    .experience-section {
+        padding: 0.5rem 0.2rem 0.7rem 0.2rem;
+        border-radius: 0.7rem;
+    }
+    section#experience {
+        margin: 0.5rem 0.1rem 0.5rem 0.1rem;
+        padding: 0.2rem 0.2rem 0.5rem 0.2rem;
+        border-radius: 0.5rem;
+    }
+    .experience-cards {
+        gap: 1rem;
+        margin-top: 0.5rem;
+    }
+    .experience-card {
+        padding: 0.7rem 0.3rem 0.7rem 0.3rem;
+        border-radius: 0.5rem;
+        font-size: 0.93rem;
+    }
+    .exp-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+    .exp-icon {
+        width: 1.6rem;
+        height: 1.6rem;
+        font-size: 1.1rem;
+    }
+    .exp-company, .exp-role, .exp-dates {
+        font-size: 0.93rem;
+    }
+    .exp-list {
+        font-size: 0.91rem;
+        padding-left: 0.3rem;
+    }
+    section#experience h2 {
+        font-size: 1.2rem;
+        margin-top: 0.1rem;
+        margin-bottom: 0.2rem;
+    }
+}
 @media (max-width: 900px) {
     .experience-section {
         max-width: 98vw;
@@ -123,6 +165,7 @@ section#experience {
     border-radius: 24px;
     padding: 0.7rem 2rem 2rem 1rem;
     background: #232323;
+    max-width: 100%;
 }
 section#experience h2 {
     color: #00bfae;

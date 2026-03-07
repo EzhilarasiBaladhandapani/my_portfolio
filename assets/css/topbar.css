@@ -1,3 +1,28 @@
+@media (max-width: 600px) {
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+    }
+    .logo {
+        font-size: 1.3rem;
+        padding: 0.1rem 0.2rem 0.1rem 0;
+    }
+    .navbar ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.2rem 0.5rem;
+        width: 100%;
+        align-items: flex-start;
+    }
+    .navbar li {
+        margin: 0.2rem 0;
+    }
+    .navbar a {
+        font-size: 1rem;
+        padding-bottom: 0.1rem;
+    }
+}
 /* Topbar styles */
 .topbar {
         width: auto;
